@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 let cards = [];
 
-app.post('/api/load-cards', (req, res) => {
+app.post('/api/load/cards', (req, res) => {
   cards = req.body;
   res.json({ message: 'Cartas cargadas correctamente.' });
 });
